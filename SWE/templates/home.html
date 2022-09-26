@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='index.css') }}">
+    <title>SWE_5_Home</title>
+</head>
+<body class = 'index'>
+    <h1>Welcome {{username}}</h1>
+    <table class = "table">
+        <tr>
+            <th>Password</th>
+            <th>Encrypted</th>
+        </tr>
+        <tr>
+            <td>{{password}}</td>
+            <td>{{encrypt}}</td>
+        </tr>
+    </table>
+</body>
+</html>
